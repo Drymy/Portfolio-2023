@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import { Main } from './components/main';
+import { Header } from './components/header';
+import { SquareGenerator } from './components/squaresbg';
 
 function App() {
+  const [backgroundColor, setBackgroundColor] = useState('#2f353b');
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundColor }}>
+        <Header />
+        <SquareGenerator />
+        <Main backgroundColor={backgroundColor} setBackgroundColor={setBackgroundColor} />
     </div>
   );
 }
