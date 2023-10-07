@@ -322,7 +322,7 @@ p, h2, h1 {
 .moogText {
   display: inline-block;
   position: absolute;
-  left: calc(30vw + 30px);
+  left: calc(30vw + 12px);
   top: calc(-2vh - 5px);
   font-size: 1em;
   color: black;

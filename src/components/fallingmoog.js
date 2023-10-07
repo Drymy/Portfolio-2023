@@ -24,7 +24,7 @@ export function FallingMoog() {
         if (!isHelloDivCreated.current) {
           const helloDiv = document.createElement('div');
           helloDiv.className = 'moogText';
-          helloDiv.textContent = 'Cliquez-moi !';
+          helloDiv.textContent = 'Cliquez-moi ! ';
           const parentDiv = document.getElementById('moogContainer');
           parentDiv.appendChild(helloDiv);
           isHelloDivCreated.current = true;
@@ -63,7 +63,7 @@ export function FallingMoog() {
         />
       </div>
 
-      <Modal isOpen={isModalOpen} onClose={closeModal} caption="Voici mon lapin Moog!" />
+      <Modal isOpen={isModalOpen} onClose={closeModal} caption="Voici mon lapin Moog !" />
 
     </div>
   );
