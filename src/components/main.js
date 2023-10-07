@@ -101,7 +101,6 @@ class Portfolio extends Component {
 
   render() {
     return (
-      
         <div className='mainBloc'>
           <div className='buttons'>
             <button
@@ -133,7 +132,6 @@ class Portfolio extends Component {
               {this.renderSection()}
             </div>
           </div>
-
       </div>
     );
   }

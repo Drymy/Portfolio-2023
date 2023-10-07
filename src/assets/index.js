@@ -16,4 +16,6 @@ import Discord from '../assets/discord.svg';
 import VSCode from '../assets/vscode.svg';
 import Wordpress from '../assets/wp.svg';
 
-export { Photoshop, Premiere, Illustrator, AfterEffects, ExperienceDesign, CSS, HTML, Javascript, Java, PHP, React, Angular, Git, Discord, VSCode, Wordpress};
+import Moog from '../assets/moog.svg';
+
+export { Photoshop, Premiere, Illustrator, AfterEffects, ExperienceDesign, CSS, HTML, Javascript, Java, PHP, React, Angular, Git, Discord, VSCode, Wordpress, Moog};

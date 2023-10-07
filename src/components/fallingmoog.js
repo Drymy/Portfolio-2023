@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { Modal } from './modal.js'; // Import the Modal component
+import { Modal } from './modal.js'; 
+import * as svgAssets from '../assets';
 
 export function FallingMoog() {
   const isHelloDivCreated = useRef(false);
@@ -9,7 +10,7 @@ export function FallingMoog() {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    // Initial state (before animation starts)
+    // Initial state 
     gsap.set('#fallingMoog', { y: '100px', opacity: 0 });
 
     // Animation
@@ -28,7 +29,7 @@ export function FallingMoog() {
           parentDiv.appendChild(helloDiv);
           isHelloDivCreated.current = true;
 
-          // Animation for the helloDiv (fade-in from the right)
+          // Animation for the helloDiv 
           gsap.from(helloDiv, {
             duration: 1,
             x: '50%',
@@ -54,15 +55,14 @@ export function FallingMoog() {
   return (
     <div className="moogContainer" id="moogContainer">
       <div id="fallingMoog">
-        {/* Attach an onClick event handler to open the modal */}
+
         <img
-          src="https://drymy.github.io/-REACTJS-Portfolio-2/img/moog2.svg"
-          alt="fallingmoog"
+          src={svgAssets.Moog} 
+          alt="MoogSVG"
           onClick={openModal}
         />
       </div>
 
-      {/* Conditionally render the modal component */}
       <Modal isOpen={isModalOpen} onClose={closeModal} caption="Voici mon lapin Moog!" />
 
     </div>
