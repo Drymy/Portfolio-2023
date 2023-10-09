@@ -48,14 +48,14 @@ class Portfolio extends Component {
   }
 
   changeSection(sectionName) {
-    // Set transitioning to true when changing section
+
     this.setState({ transitioning: true });
     const backgroundColor = this.getBackgroundColor(sectionName);
   
-    // Update the background color of the entire body
+
     this.props.setBackgroundColor(backgroundColor);
   
-    // Update the logo's hue-rotate filter based on the section
+
     let hueRotateValue = 0; 
     switch (sectionName) {
       case 'Home':
@@ -74,20 +74,20 @@ class Portfolio extends Component {
         break;
     }
   
-    // Apply the hue-rotate filter to the logo
+
     const logoElement = document.getElementById('logo');
     if (logoElement) {
       logoElement.style.filter = `hue-rotate(${hueRotateValue}deg)`;
     }
   
-    // Continue with the rest of your section change logic
+
     setTimeout(() => {
       this.setState({ currentSection: sectionName, transitioning: false });
-    }, 500); // Adjust the delay as needed (in milliseconds)
+    }, 500); 
   }
 
   getBackgroundColor(sectionName) {
-    // Define background colors for each section
+
     const backgroundColors = {
       Home: '#2f353b',
       Design: '#3d252c', 
@@ -95,7 +95,7 @@ class Portfolio extends Component {
       Contact: '#1e3363', 
     };
 
-    // Return the background color for the specified section
+
     return backgroundColors[sectionName] || this.props.backgroundColor;
   }
 

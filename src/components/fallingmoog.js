@@ -24,12 +24,12 @@ export function FallingMoog() {
         if (!isHelloDivCreated.current) {
           const helloDiv = document.createElement('div');
           helloDiv.className = 'moogText';
-          helloDiv.textContent = 'Cliquez-moi ! ';
+          helloDiv.textContent = 'Cliquez-moi !';
           const parentDiv = document.getElementById('moogContainer');
           parentDiv.appendChild(helloDiv);
           isHelloDivCreated.current = true;
 
-          // Animation for the helloDiv 
+          // Animation for the text box
           gsap.from(helloDiv, {
             duration: 1,
             x: '50%',

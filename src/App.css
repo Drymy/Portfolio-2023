@@ -98,14 +98,14 @@ a {
 
 @keyframes zoom-out {
   0% {
-    width: 90%; /* Initial width - 100% */
-    height: auto; /* Initial height - 100% */
-    transform: translate(0%, 50%); /* Initially center the logo on the screen */
+    width: 90%; 
+    height: auto; 
+    transform: translate(0%, 50%); 
   }
   100% {
-    width: 40%; /* Final width - 40% */
-    height: auto; /* Auto height to maintain aspect ratio */
-    transform: translate(0, 0); /* Return to the center of its container */
+    width: 40%; 
+    height: auto; 
+    transform: translate(0, 0); 
   }
 }
 
@@ -344,21 +344,21 @@ p, h2, h1 {
   }
 
 #fallingMoog img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; 
+    height: auto; 
     cursor: pointer;
   }
 
 /* MODAL */
 
-/* Modal Overlay */
+
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,7 +399,7 @@ p, h2, h1 {
     stroke-width: 2;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
-    transform: translate(0%, 50%); /* Initially center the logo on the screen */
+    transform: translate(0%, 50%); 
     animation: draw 5s ease forwards, fill 3s ease forwards 2.5s, zoom-out 2s ease forwards 2.5s;
   
   }
@@ -538,7 +538,7 @@ p, h2, h1 {
     stroke-width: 2;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
-    transform: translate(0%, 50%); /* Initially center the logo on the screen */
+    transform: translate(0%, 50%);
     animation: draw 5s ease forwards, fill 3s ease forwards 2.5s, zoom-out 2s ease forwards 2.5s;
   
   }
@@ -677,7 +677,7 @@ p, h2, h1 {
     stroke-width: 2;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
-    transform: translate(0%, 50%); /* Initially center the logo on the screen */
+    transform: translate(0%, 50%);
     animation: draw 5s ease forwards, fill 3s ease forwards 2.5s, zoom-out 2s ease forwards 2.5s;
   
   }
@@ -817,7 +817,7 @@ p, h2, h1 {
     stroke-width: 2;
     stroke-dasharray: 1300;
     stroke-dashoffset: 1300;
-    transform: translate(0%, 50%); /* Initially center the logo on the screen */
+    transform: translate(0%, 50%);
     animation: draw 5s ease forwards, fill 3s ease forwards 2.5s, zoom-out 2s ease forwards 2.5s;
   
   }

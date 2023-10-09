@@ -18,4 +18,7 @@ function App() {
   );
 }
 
+/*Bonjour à vous si vous venez depuis mon Github!*/
+/*Hello if you're coming from my Github!*/
+
 export default App;
