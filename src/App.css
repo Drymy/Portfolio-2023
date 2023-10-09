@@ -284,6 +284,7 @@ p, h2, h1 {
 }
 
 /* DESIGN */
+
 .designIcons {
   display: flex;
   flex-direction: row;
@@ -297,6 +298,7 @@ p, h2, h1 {
 }
 
 /* DEV */
+
 .devIcons {
   display: flex;
   flex-direction: row;
@@ -356,8 +358,8 @@ p, h2, h1 {
     cursor: pointer;
   }
 
-/* MODAL */
 
+/* MODAL */
 
 .modal-overlay {
   position: fixed;
@@ -372,7 +374,6 @@ p, h2, h1 {
   z-index: 999;
 }
 
-/* Modal Content */
 .modal-content {
   background-color: white;
   width: 80%;
