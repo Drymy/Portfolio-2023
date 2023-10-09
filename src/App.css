@@ -678,8 +678,7 @@ p, h2, h1 {
 
 }
 
-
-/* LARGE SCREENS */
+/* DESKTOP SCREENS */
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
