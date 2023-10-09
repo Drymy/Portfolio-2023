@@ -29,7 +29,6 @@ a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   z-index: -1;
   overflow: hidden !important;
@@ -190,7 +189,7 @@ p, h2, h1 {
   justify-content: center;
   height: 70%;
   width: 100%;
-  font-size: 2vh;
+  font-size: calc(15px + 0.390625vw);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -227,7 +226,7 @@ p, h2, h1 {
 .section-button {
   background: none;
   border: none;
-  font-size: 5vw;
+  font-size: calc(20px + 0.39062vw);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-transform: uppercase;
   color: #333;
@@ -235,6 +234,11 @@ p, h2, h1 {
   margin: 10px;
   cursor: pointer;
   transition: color 0.3s ease;
+}
+
+.customLinks {
+  line-height: 0px;
+  margin: 0 auto;
 }
 
 /* Design Button Styles */
@@ -299,6 +303,7 @@ p, h2, h1 {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  justify-content: center;
 }
 
 .devIcons img {
@@ -443,8 +448,12 @@ p, h2, h1 {
     }
   }
 
+  h1, h2, a {
+    font-size: calc(20px + 0.39062vw);
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(16px + 0.390625vw);
   }
 
   .content {
@@ -452,33 +461,19 @@ p, h2, h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.7rem;
-  }
-
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
-  }
-  
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
   }
 
   .section-button {
-    font-size: 1.3em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(20px + 0.39062vw);
   }
 
   .content.home {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .content.home h2 {
+    line-height: 0px;
   }
 
   .content.dev {
@@ -512,6 +507,7 @@ p, h2, h1 {
   .moogText {
     left: calc(48vw + 50px);
     top: calc(-4vh - 5px);
+    font-size: calc(20px + 0.39062vw);
   }
 
   #fallingMoog {
@@ -539,7 +535,7 @@ p, h2, h1 {
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .logo {
-    width: 200px; 
+    width: 300px; 
     height: auto;
     stroke: #4b8ac9;
     fill-opacity: 0;
@@ -568,12 +564,12 @@ p, h2, h1 {
   
   @keyframes zoom-out {
     0% {
-      width: 200px; 
+      width: 300px; 
       height: auto; 
       transform: translate(0%, 50%); 
     }
     100% {
-      width: 120px; 
+      width: 160px; 
       height: auto; 
       transform: translate(0, 0);
     }
@@ -587,9 +583,14 @@ p, h2, h1 {
       transform: translate(0%, 0%);
     }
   }
-  
+
+  h1, h2, a {
+    font-size: calc(18px + 0.39062vw);
+    line-height: 20px;
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(16px + 0.39062vw);
   }
 
   .content {
@@ -597,28 +598,10 @@ p, h2, h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
-  }
-
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
-  }
-  
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
   }
 
   .section-button {
-    font-size: 1.2em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(22px + 0.39062vw);
   }
 
   .content.home {
@@ -626,8 +609,12 @@ p, h2, h1 {
     margin: 0 auto;
   }
 
+  .content.home h2 {
+    line-height: 0px;
+  }
+
   .content.dev {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -657,6 +644,7 @@ p, h2, h1 {
   .moogText {
     left: calc(53vw + 50px);
     top: calc(-4vh - 5px);
+    font-size: calc(19px + 0.39062vw);
   }
 
   #fallingMoog {
@@ -680,7 +668,7 @@ p, h2, h1 {
 
 /* DESKTOP SCREENS */
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1280px) {
 
   .logo {
     width: 250px; 
@@ -732,8 +720,12 @@ p, h2, h1 {
     }
   }
 
+  h1, h2 {
+    font-size: calc(19px + 0.39062vw);
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(17px + 0.39062vw);
   }
 
   .content {
@@ -741,33 +733,19 @@ p, h2, h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font: 1rem;
-  }
-
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
-  }
-  
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
   }
 
   .section-button {
-    font-size: 1.5em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(23px + 0.39062vw);
   }
 
   .content.home {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .content.home h2 {
+    line-height: 0px;
   }
 
   .content.dev {
@@ -799,8 +777,9 @@ p, h2, h1 {
   }
 
   .moogText {
-    left: calc(60vw + 30px);
+    left: calc(55vw + 50px);
     top: calc(-4vh - 5px);
+    font-size: calc(20px + 0.39062vw);
   }
 
   #fallingMoog {
@@ -826,7 +805,7 @@ p, h2, h1 {
 
 /* DESKTOP SCREENS */
 
-@media (min-width: 1200px) and (max-width:1440px) {
+@media (min-width: 1280px) and (max-width:1440px) {
 
   .logo {
     width: 300px; 
@@ -878,8 +857,12 @@ p, h2, h1 {
     }
   }
 
+  h1, h2 {
+    font-size: calc(20px + 0.39062vw);
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(18px + 0.39062vw);
   }
 
   .content {
@@ -887,33 +870,19 @@ p, h2, h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-  }
-
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
   }
   
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
-  }
-
   .section-button {
-    font-size: 1.2em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(24px + 0.39062vw);
   }
 
   .content.home {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .content.home h2 {
+    line-height: 0px;
   }
 
   .content.dev {
@@ -927,9 +896,14 @@ p, h2, h1 {
   }
 
   .designIcons {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
   }
+
+  .designIcons img {
+    width: 12%;
+  }
+
 
   .devIcons {
     width: 100%;
@@ -945,8 +919,9 @@ p, h2, h1 {
   }
 
   .moogText {
-    left: calc(60vw + 40px);
+    left: calc(60vw + 30px);
     top: calc(-4vh - 5px);
+    font-size: calc(20px + 0.39062vw);
   }
 
   #fallingMoog {
@@ -1021,8 +996,12 @@ p, h2, h1 {
     }
   }
 
+  h1, h2 {
+    font-size: calc(21px + 0.39062vw);
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(19px + 0.39062vw);
   }
 
   .content {
@@ -1030,33 +1009,19 @@ p, h2, h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-  }
-
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
-  }
-  
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
   }
 
   .section-button {
-    font-size: 1.2em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(25px + 0.39062vw);
   }
 
   .content.home {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .content.home h2 {
+    line-height: 0px;
   }
 
   .content.dev {
@@ -1072,6 +1037,10 @@ p, h2, h1 {
   .designIcons {
     width: 50%;
     margin: 0 auto;
+  }
+
+  .designIcons img {
+    width: 13%;
   }
 
   .devIcons {
@@ -1090,6 +1059,7 @@ p, h2, h1 {
   .moogText {
     left: calc(60vw + 50px);
     top: calc(-4vh - 5px);
+    font-size: calc(20px + 0.39062vw);
   }
 
   #fallingMoog {
@@ -1165,8 +1135,12 @@ p, h2, h1 {
     }
   }
 
+  h1, h2 {
+    font-size: calc(22px + 0.39062vw);
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(20px + 0.39062vw);
   }
 
   .content {
@@ -1176,25 +1150,8 @@ p, h2, h1 {
     align-items: center;
   }
 
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
-  }
-  
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
-  }
-
   .section-button {
-    font-size: 1.5em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(26px + 0.39062vw);
   }
 
   .content.home {
@@ -1202,8 +1159,12 @@ p, h2, h1 {
     margin: 0 auto;
   }
 
+  .content.home h2 {
+    line-height: 0px;
+  }
+
   .content.dev {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -1217,13 +1178,17 @@ p, h2, h1 {
     margin: 0 auto;
   }
 
+  .designIcons img {
+    width: 14%;
+  }
+
   .devIcons {
     width: 100%;
     margin: 0 auto;
   }
 
   .devIcons img {
-    width: 4%;
+    width: 5%;
   }
   
   .contactStyle p {
@@ -1233,6 +1198,7 @@ p, h2, h1 {
   .moogText {
     left: calc(60vw + 50px);
     top: calc(-4vh - 5px);
+    font-size: calc(20px + 0.39062vw);
   }
 
   #fallingMoog {
@@ -1307,8 +1273,12 @@ p, h2, h1 {
     }
   }
 
+  h1, h2 {
+    font-size: calc(23px + 0.39062vw);
+  }
+
   .mainContent {
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(21px + 0.39062vw);
   }
 
   .content {
@@ -1318,25 +1288,9 @@ p, h2, h1 {
     align-items: center;
   }
 
-  .designIcons {
-    width: 50%;
-  }
-
-  .devIcons {
-    width: 50%;
-  }
-  
-  .contactStyle p {
-    font-size: calc(10px + 1.5vmin);
-  }
 
   .section-button {
-    font-size: 1.5em;
-  }
-
-  .mainContent {
-    font-size: calc(10px + 1.5vmin);
-    width: 90%;
+    font-size: calc(27px + 0.39062vw);
   }
 
   .content.home {
@@ -1345,7 +1299,7 @@ p, h2, h1 {
   }
 
   .content.dev {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -1365,7 +1319,7 @@ p, h2, h1 {
   }
 
   .devIcons img {
-    width: 4%;
+    width: 6%;
   }
   
   .contactStyle p {
@@ -1375,6 +1329,7 @@ p, h2, h1 {
   .moogText {
     left: calc(60vw + 50px);
     top: calc(-4vh - 5px);
+    font-size: calc(20px + 0.39062vw);
   }
 
   #fallingMoog {

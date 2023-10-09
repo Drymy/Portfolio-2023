@@ -6,7 +6,7 @@ export function DevSection({ visible }) {
     <div className={`content ${visible ? 'fade-in' : 'dev'}`}>
       <h2>J'utilise ces technologies</h2>
       <div className='devIcons'>
-       <p><img src={svgAssets.HTML} alt="HTML Logo"/>
+       <p className="devIcons"><img src={svgAssets.HTML} alt="HTML Logo"/>
         <img src={svgAssets.CSS} alt="CSS Logo"/>
         <img src={svgAssets.Javascript} alt="Javascript Logo"/>
         <img src={svgAssets.React} alt="React Logo"/>
