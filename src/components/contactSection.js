@@ -12,7 +12,7 @@ export function ContactSection({ visible }) {
         <a href="https://www.linkedin.com/in/stefan-simic-5204971b9/">Page LinkedIn</a></p>
         <h2> Téléchargez mes CV </h2>
         <p>
-        <a href="/assets/CV.pdf" download="CV.pdf">Cliquez ici pour mon CV</a>
+        <a href="/assets/cv.pdf" download="cv.pdf">Cliquez ici pour mon CV</a>
         </p>
       </div>
     </div>
